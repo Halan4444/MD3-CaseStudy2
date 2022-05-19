@@ -112,7 +112,6 @@
                         <button type="submit" class="btn btn-primary btn-block">+ Create</button>
                     </div>
                 </div>
-
                 <div class="form-group row">
                     <div class="mx-auto">
                         <c:if test='${message != null}'>

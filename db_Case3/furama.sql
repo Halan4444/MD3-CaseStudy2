@@ -339,6 +339,34 @@ INSERT INTO `position` VALUES (1,'Quản Lý'),(2,'Nhân Viên');
 UNLOCK TABLES;
 
 --
+-- Table structure for table `product`
+--
+
+DROP TABLE IF EXISTS `product`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `product` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `price` float DEFAULT NULL,
+  `image` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `description` varchar(2000) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `manufacturer` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `product`
+--
+
+LOCK TABLES `product` WRITE;
+/*!40000 ALTER TABLE `product` DISABLE KEYS */;
+INSERT INTO `product` VALUES (1,'Cơm Huế',120000,'images/des-1.jpg','Cơm từ Huế','Long'),(2,'Bún Bò',120000,'images/des-2.jpg','Bún bò ngọt','Long'),(3,'Bún Chả',120000,'images/des-3.jpg','Bún chả Hà Nội','Long'),(4,'Phở Huệ',120000,'images/des-4.jpg','Phở Bò Nam Định','Long'),(5,'Phở Long',120000,'images/des-5.jpg','Phở Bò Nam Định','Long'),(6,'Phở Lộc',120000,'images/des-6.jpg','Phở Bò Nam Định','Long');
+/*!40000 ALTER TABLE `product` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `rent_type`
 --
 
@@ -398,4 +426,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-19  8:20:13
+-- Dump completed on 2022-05-19 15:47:56
