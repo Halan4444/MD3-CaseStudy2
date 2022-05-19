@@ -28,7 +28,7 @@
             <a class="btn btn-primary" href="/contracts?action=create" role="button"> + Create new contract details</a>
         </div>
     </div>
-    <table id="myTable2" class="table table-striped table-bordered" style="width: 100%">
+    <table id="myTable2" class="table table-striped table-bordered table-dark table-hover" style="width: 100%">
         <thead class="thead-dark">
         <tr>
             <th scope="col">#</th>

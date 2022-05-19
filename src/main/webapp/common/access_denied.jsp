@@ -16,9 +16,9 @@
         <h2 class=" py-1 text-danger"> Access Denied</h2>
         <br>
         <br>
-        <p>
+        <p class=" py-1 text-danger" >
             you do not have access to this page.</p>
-        <p>
+        <p class=" py-1 text-danger">
             Please contact the administrator!
         </p>
     </div>

@@ -19,7 +19,7 @@
     <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo"><i class="fas fa-paper-plane"></i>CodeGym</a>
     <nav class="navbar">
         <a class="nav-link ${urlPath eq 'home' or empty urlPath  ? 'active' : ''}" data-aos="zoom-in-left" data-aos-delay="300" href="/common/index.jsp">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-link ${urlPath eq 'home' or empty urlPath  ? 'active' : ''}" data-aos="zoom-in-left" data-aos-delay="300" href="/common/index.jsp">About <span class="sr-only">(current)</span></a>
+        <a class="nav-link ${urlPath eq 'home' or empty urlPath  ? 'active' : ''}" data-aos="zoom-in-left" data-aos-delay="300" href="/view/about/list.jsp">About <span class="sr-only">(current)</span></a>
         <a class="nav-link ${urlPath eq 'employee' ? 'active' : ''}" data-aos="zoom-in-left" data-aos-delay="450" href="/employees">Employee</a>
         <a class="nav-link ${urlPath eq 'customer' ? 'active' : ''}" data-aos="zoom-in-left" data-aos-delay="600" href="/customers">Customer</a>
         <a class="nav-link ${urlPath eq 'service' ? 'active' : ''}" data-aos="zoom-in-left" data-aos-delay="750" href="/facilitys">Service</a>
