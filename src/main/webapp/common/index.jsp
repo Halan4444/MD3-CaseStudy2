@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="/css/style.scss">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
     <script>
 
         AOS.init({
@@ -31,32 +30,106 @@
 <body>
 <c:import url="/components/header.jsp"/>
 <c:import url="/components/navbar.jsp"/>
-<div class="container-fluid row">
-    <div class="col-sm-2 border-end bg-white" id="sidebar">
-        <div class="list-group list-group-flush border">
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Dashboard</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Shortcuts</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Overview</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Events</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Profile</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Status</a>
+<section class="home" id="home">
+    <div class="content">
+        <span data-aos="fade-up" data-aos-delay="150">follow us</span>
+        <h3 data-aos="fade-up" data-aos-delay="300">follow our CodeGym</h3>
+        <p data-aos="fade-up" data-aos-delay="450">Welcome to the cross-Vietnam - global tour, provided by CodeGym travel agency.
+            Let's explore this magical world with us</p>
+        <a data-aos="fade-up" data-aos-delay="600" class="btn" href="/view/contract"> Book Now</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- booking form section starts  -->
+
+<section class="book-form" id="book-form">
+
+    <form action="">
+        <div data-aos="zoom-in" data-aos-delay="150" class="inputBox">
+            <span>where to?</span>
+            <input type="text" placeholder="place name" value="">
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="300" class="inputBox">
+            <span>when?</span>
+            <input type="date" value="">
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="450" class="inputBox">
+            <span>how many?</span>
+            <input type="number" placeholder="number of travelers" value="">
+        </div>
+        <input data-aos="zoom-in" data-aos-delay="600" type="submit" value="find now" class="btn">
+    </form>
+
+</section>
+
+<!-- booking form section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="video-container" data-aos="fade-right" data-aos-delay="300">
+        <video src="/images/about-vid-1.mp4" muted autoplay loop class="video"></video>
+        <div class="controls">
+            <span class="control-btn" data-src="/images/about-vid-1.mp4"></span>
+            <span class="control-btn" data-src="/images/about-vid-2.mp4"></span>
+            <span class="control-btn" data-src="/images/about-vid-3.mp4"></span>
         </div>
     </div>
-    <div class="col-sm-10 px-3">
-        <h1 class="mt-4">THIS WORLD CLASS RESORT, FURAMA DANANG, REPUTABLE FOR BEING A CULINARY RESORT IN VIETNAM</h1>
-        <p>Overlooking the long stretch of wide white sand on Danang Beach, Furama Resort Danang is a gateway to three World Heritage Sites of Hoi An
-            (20 minutes), My Son (90 minutes) and Hue (2 hours). The 198 rooms and suites plus 70 two to four bedroom pool villas feature tasteful
-            décor, designed with traditional Vietnamese style and a touch of French colonial architecture and guarantee the Vietnam’s the most
-            prestigious resort -counting royalty, presidents, movie stars and international business leaders among its celebrity guests.</p>
-        <p>
-            Make sure to keep all page content within the
-            <code>#page-content-wrapper</code>
-            . The top navbar is optional, and just for demonstration. Just create an element with the
-            <code>#sidebarToggle</code>
-            ID which will toggle the menu when clicked.
-        </p>
+    <div class="content" data-aos="fade-left" data-aos-delay="600">
+        <span>why choose us?</span>
+        <h3>Nature's Majesty Awaits You</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde fugit repellat error deserunt nam aperiam odit libero quos provident. Nostrum?</p>
+        <a href="#" class="btn">read more</a>
     </div>
-</div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- destination section starts  -->
+
+<section class="destination" id="destination">
+
+    <div class="heading">
+        <span>our destination</span>
+        <h1>make yours destination</h1>
+    </div>
+
+    <div class="box-container">
+        <%--        <c:forEach  items='${products}' var="product">--%>
+        <%--        <td><a href="/ProductServlet?action=view&id=${product.getId()}">${product.getProductName()}</a></td>--%>
+        <%--        <td>${product.getPrice()}</td>--%>
+        <%--        <td>${product.getDescription()}</td>--%>
+        <%--        <td><a href="/ProductServlet?action=edit&id=${product.getId()}">edit</a></td>--%>
+        <%--        <td><a href="/ProductServlet?action=delete&id=${product.getId()}">delete</a></td>--%>
+        <%--        </c:forEach>--%>
+
+        <%--    <form method="post" action="fileuploadservlet" enctype="multipart/form-data">--%>
+        <%--        <input type="file" name="file" />--%>
+        <%--        <input type="submit" value="Upload" />--%>
+        <%--    </form>--%>
+        <form class="box" data-aos="fade-up" data-aos-delay="150" method="post" action="/fileuploadservlet" enctype="multipart/form-data" style="background-color: #29d9d5">
+            <input type="file" name="file" />
+            <input type="submit" value="Upload" />
+        </form>
+        <c:forEach  items='${products}' var="product">
+        <div class="box" data-aos="fade-up" data-aos-delay="300">
+            <div class="image">
+                <img src=${product.getImage()} alt="">
+            </div>
+            <div class="content">
+                <h3>${product.getProductName()}</h3>
+                <p>${product.getDescription()}</p>
+                <a href="#">read more <i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+        </c:forEach>
+</section>
+
 <c:import url="/components/footer.jsp"/>
 </body>
 </html>
