@@ -8,40 +8,38 @@
           integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link href="../css/Styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
 </head>
 <body>
 <c:import url="/components/header.jsp"/>
 <c:import url="/components/navbar.jsp"/>
 <div class="container-fluid row">
-    <div class="col-4 mx-auto">
+    <div class="col-4 mx-auto" style="padding: 5px">
         <br>
         <br>
-        <div class="container mx-auto shadow-lg p-3 mb-5 bg-white" style="border-radius: 10px; box-shadow: 5px 5px 5px #a0fffc" >
+        <br>
+        <div class="container mx-auto shadow-lg p-3 mb-5 bg-white" style="border-radius: 10px;" >
             <h2 class="text-center py-1"> Login</h2>
             <form action="/login" method="post">
                 <div class="form-group row">
-                    <label for="username" class="col-sm-3 col-form-label">Username</label>
+                    <label for="username" class="col-sm-2 col-form-label">Username</label>
                     <div class="col-sm-9">
                         <input type="text" class="form-control" id="username" name="username" value="${username}">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="password" class="col-sm-3 col-form-label">Password</label>
+                    <label for="password" class="col-sm-2 col-form-label">Password</label>
                     <div class="col-sm-9">
                         <input type="password" class="form-control" id="password" name="password" value="${password}">
                     </div>
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-3"> </div>
-
                     <div class="form-check col-sm-9">
                         <input class="form-check-input" type="checkbox" id="remember" name ="rememberMe" style="margin-right: 0.5px">
                         <label class="form-check-label" for="remember">
                             Remember me</label>
                     </div>
                 </div>
-
                 <div class="form-group row">
                     <div class="col-sm-4 mx-auto">
                         <button type="submit" class="btn btn-primary btn-block">Login</button>
@@ -56,6 +54,7 @@
                 </div>
             </form>
         </div>
+        <br>
     </div>
 </div>
 <%--<c:import url="/components/footer.jsp"/>--%>
