@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class BaseRepository {
-    private String jdbcUrl = "jdbc:mysql://localhost:3306/furama_manager";
+    private String jdbcUrl = "jdbc:mysql://localhost:3306/furama";
     private String username = "root";
-    private String password = "Bao123456@.";
+    private String password = "huonghuong@95";
     private Connection connection;
 
     public BaseRepository() {
