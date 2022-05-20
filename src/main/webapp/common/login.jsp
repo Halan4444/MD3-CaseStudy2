@@ -21,14 +21,16 @@
             <h2 class="text-center py-1"> Login</h2>
             <form action="/login" method="post">
                 <div class="form-group row">
+                    <div class="col-sm-1"></div>
                     <label for="username" class="col-sm-2 col-form-label">Username</label>
-                    <div class="col-sm-9">
+                    <div class="col-sm-8">
                         <input type="text" class="form-control" id="username" name="username" value="${username}">
                     </div>
                 </div>
                 <div class="form-group row">
+                    <div class="col-sm-1"></div>
                     <label for="password" class="col-sm-2 col-form-label">Password</label>
-                    <div class="col-sm-9">
+                    <div class="col-sm-8">
                         <input type="password" class="form-control" id="password" name="password" value="${password}">
                     </div>
                 </div>

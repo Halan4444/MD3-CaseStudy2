@@ -21,6 +21,7 @@
     <div class="row justify-content-between py-1">
         <div class="col-4">
             <a class="btn btn-primary" href="/facilitys?action=create" role="button"> + Create new service</a>
+            <a class="btn btn-primary" href="/view/facility/detail.jsp" role="button"> + Homestay Detail</a>
         </div>
     </div>
     <table id="myTable2" class="table table-striped table-bordered table-dark table-hover" style="width: 100%">
@@ -83,7 +84,6 @@
     </c:if>
 </div>
 <c:import url="/components/footer.jsp"/>
-
 <!-- Modal -->
 <div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
