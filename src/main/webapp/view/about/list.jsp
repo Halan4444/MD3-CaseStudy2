@@ -32,14 +32,15 @@
 <c:import url="/components/navbar.jsp"/>
 <section class="home" id="home">
     <div class="content">
-        <span data-aos="fade-up" data-aos-delay="150">Triết Lý</span>
-        <h3 data-aos="fade-up" data-aos-delay="300">Kinh Doanh Du Lịch</h3>
+        <span data-aos="fade-up" data-aos-delay="150">Tourism</span>
+        <h3 data-aos="fade-up" data-aos-delay="300">business Philosophy</h3>
         <p data-aos="fade-up" data-aos-delay="450">
-            Gắn các giá trị văn hóa bản địa với hoạt động kinh doanh tạo ra chuỗi giá trị mang thương hiệu của Codegym Group,
-            quảng bá hình ảnh du lịch Việt Nam - Quốc Tế đến với bạn bè quốc tế và bạn bè quốc tế
-            với Việt nam, đưa du lịch Việt Nam - Quốc Tế trở thành ngành kinh tế mũi nhọn.
-            Mục tiêu doanh nghiệp đồng hành với xã hội, cộng đồng để cùng phát triển về kinh tế và các giá trị tinh thần.</p>
-        <a data-aos="fade-up" data-aos-delay="600" class="btn" href="/view/contract/list.jsp"> Book Now</a>
+            Associating indigenous cultural values with Codegym Group's
+            branded value chain business activities,promote the image of Vietnam - International
+            tourism to international friends and international friends with Vietnam, turning Vietnam - International
+            tourism into a spearhead economic sector. The business objective is to accompany society
+            and the community to develop together in terms of economy and spiritual values.</p>
+        <a data-aos="fade-up" data-aos-delay="600" class="btn" href="/view/booking/list.jsp"> Book Now</a>
     </div>
 </section>
 

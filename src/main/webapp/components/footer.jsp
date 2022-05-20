@@ -1,12 +1,12 @@
-<footer class="text-center text-lg-start bg-light text-muted">
-
+<br>
+<br>
+<br>
+<footer class="text-center text-md-start bg-dark text-muted">
     <section class="footer">
-
         <div class="box-container">
-
             <div class="box" data-aos="fade-up" data-aos-delay="150">
                 <a href="#" class="logo"> <i class="fas fa-paper-plane"></i>travel </a>
-                <p>Xinh đẹp là tên gọi khác của Codegymers, Mộng mơ là tên gọi khác của Coach C0222I1.</p>
+                <p>Beautiful is another name for Codegymers, Dream is another name for Coach C0222I1.</p>
                 <div class="share">
                     <a href="#" class="fab fa-facebook-f"></a>
                     <a href="#" class="fab fa-twitter"></a>
@@ -14,7 +14,6 @@
                     <a href="#" class="fab fa-linkedin"></a>
                 </div>
             </div>
-
             <div class="box" data-aos="fade-up" data-aos-delay="300">
                 <h3>quick links</h3>
                 <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> home </a>

@@ -11,7 +11,7 @@
 <html>
 <head>
     <title>Home</title>
-    <%--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"--%>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     <%--          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">--%>
     <%--    <link href="../css/Styles.css">--%>
     <!-- font awesome cdn link  -->
@@ -38,11 +38,10 @@
 <c:import url="/components/navbar.jsp"/>
 <section class="home" id="home">
     <div class="content">
-        <span data-aos="fade-up" data-aos-delay="150">follow us</span>
-        <h3 data-aos="fade-up" data-aos-delay="300">follow our CodeGym</h3>
-        <p data-aos="fade-up" data-aos-delay="450">Welcome to the cross-Vietnam - global tour, provided by CodeGym travel agency.
-            Let's explore this magical world with us</p>
-        <a data-aos="fade-up" data-aos-delay="600" class="btn" href="/view/contract/list.jsp"> Book Now</a>
+        <span data-aos="fade-up" data-aos-delay="150">Welcome Customer~</span>
+        <h3 data-aos="fade-up" data-aos-delay="300">follow our Homestay</h3>
+        <p data-aos="fade-up" data-aos-delay="450">Here, all the details of the Homestay you are looking for are displayed here</p>
+        <a data-aos="fade-up" data-aos-delay="600" class="btn" href="/view/booking/create.jsp"> Book Now</a>
     </div>
 </section>
 <!-- home section ends -->
@@ -71,23 +70,6 @@
 <!-- booking form section ends -->
 
 <!-- about section starts  -->
-<section class="about" id="about">
-    <div class="video-container" data-aos="fade-right" data-aos-delay="300">
-        <video src="/images/about-vid-1.mp4" muted autoplay loop class="video"></video>
-        <div class="controls">
-            <span class="control-btn" data-src="/images/about-vid-1.mp4"></span>
-            <span class="control-btn"   data-src="/images/about-vid-2.mp4"></span>
-            <span class="control-btn"  data-src="/images/about-vid-3.mp4"></span>
-        </div>
-    </div>
-    <div class="content" data-aos="fade-left" data-aos-delay="600">
-        <span>why choose us?</span>
-        <h3>Nature's Majesty Awaits You</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde fugit repellat error deserunt nam aperiam odit libero quos provident. Nostrum?</p>
-        <a href="#" class="btn">read more</a>
-    </div>
-</section>
-
 <!-- about section ends -->
 <section class="destination">
     <!DOCTYPE html>
@@ -210,45 +192,6 @@
                                 </div>
                                 <div id="quantity_message">Hurry! Only  <span class="items">4</span>  left in stock.</div>
                                 <form method="post" action="http://annimexweb.com/cart/add" id="product_form_10508262282" accept-charset="UTF-8" class="product-form product-form-product-template hidedropdown" enctype="multipart/form-data">
-                                    <div class="swatch clearfix swatch-0 option1" data-option-index="0">
-                                        <div class="product-form__item">
-                                            <label class="header">Color: <span class="slVariant">Red</span></label>
-                                            <div data-value="Black" class="swatch-element color black available">
-                                                <input class="swatchInput" id="swatch-0-black" type="radio" name="option-0" value="Black"><label class="swatchLbl color small" for="swatch-0-black" style="background-color:black;" title="Black"></label>
-                                            </div>
-                                            <div data-value="Maroon" class="swatch-element color maroon available">
-                                                <input class="swatchInput" id="swatch-0-maroon" type="radio" name="option-0" value="Maroon"><label class="swatchLbl color small" for="swatch-0-maroon" style="background-color:maroon;" title="Maroon"></label>
-                                            </div>
-                                            <div data-value="Blue" class="swatch-element color blue available">
-                                                <input class="swatchInput" id="swatch-0-blue" type="radio" name="option-0" value="Blue"><label class="swatchLbl color small" for="swatch-0-blue" style="background-color:blue;" title="Blue"></label>
-                                            </div>
-                                            <div data-value="Dark Green" class="swatch-element color dark-green available">
-                                                <input class="swatchInput" id="swatch-0-dark-green" type="radio" name="option-0" value="Dark Green"><label class="swatchLbl color small" for="swatch-0-dark-green" style="background-color:darkgreen;" title="Dark Green"></label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swatch clearfix swatch-1 option2" data-option-index="1">
-                                        <div class="product-form__item">
-                                            <label class="header">Size: <span class="slVariant">XS</span></label>
-                                            <div data-value="XS" class="swatch-element xs available">
-                                                <input class="swatchInput" id="swatch-1-xs" type="radio" name="option-1" value="XS">
-                                                <label class="swatchLbl medium rectangle" for="swatch-1-xs" title="XS">XS</label>
-                                            </div>
-                                            <div data-value="S" class="swatch-element s available">
-                                                <input class="swatchInput" id="swatch-1-s" type="radio" name="option-1" value="S">
-                                                <label class="swatchLbl medium rectangle" for="swatch-1-s" title="S">S</label>
-                                            </div>
-                                            <div data-value="M" class="swatch-element m available">
-                                                <input class="swatchInput" id="swatch-1-m" type="radio" name="option-1" value="M">
-                                                <label class="swatchLbl medium rectangle" for="swatch-1-m" title="M">M</label>
-                                            </div>
-                                            <div data-value="L" class="swatch-element l available">
-                                                <input class="swatchInput" id="swatch-1-l" type="radio" name="option-1" value="L">
-                                                <label class="swatchLbl medium rectangle" for="swatch-1-l" title="L">L</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="infolinks"><a href="#sizechart" class="sizelink btn"> Size Guide</a> <a href="#productInquiry" class="emaillink btn"> Ask About this Product</a></p>
                                     <!-- Product Action -->
                                     <div class="product-action clearfix">
                                         <div class="product-form__item--quantity">
@@ -526,34 +469,6 @@
 
 <!-- destination section starts  -->
 
-<section class="destination" id="destination">
-
-    <div class="heading">
-        <span>our destination</span>
-        <h1>make yours destination</h1>
-    </div>
-
-    <div class="box-container">
-
-        <form class="box" data-aos="fade-up" data-aos-delay="150" method="post" action="/fileuploadservlet"
-              enctype="multipart/form-data" style="background-color: #29d9d5">
-            <input type="file" name="file" />
-            <input type="submit" value="Upload" />
-        </form>
-        <c:forEach  items='${products}' var="product">
-        <div class="box" data-aos="fade-up" data-aos-delay="300">
-            <div class="image">
-                <img src=${product.getImage()} alt="">
-            </div>
-            <div class="content">
-                <h3>${product.getProductName()}</h3>
-                <p>${product.getDescription()}</p>
-                <a href="#">read more <i class="fas fa-angle-right"></i></a>
-            </div>
-        </div>
-        </c:forEach>
-
-</section>
 <c:import url="/components/footer.jsp"/>
 </body>
 </html>

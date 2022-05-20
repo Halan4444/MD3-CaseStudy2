@@ -16,6 +16,22 @@
 <body>
 <c:import url="/components/header.jsp"/>
 <c:import url="/components/navbar.jsp"/>
+<section class="about" id="about">
+    <div class="video-container" data-aos="fade-right" data-aos-delay="300">
+        <video src="/images/about-vid-1.mp4" muted autoplay loop class="video"></video>
+        <div class="controls">
+            <span class="control-btn" data-src="/images/about-vid-1.mp4"></span>
+            <span class="control-btn"   data-src="/images/about-vid-2.mp4"></span>
+            <span class="control-btn"  data-src="/images/about-vid-3.mp4"></span>
+        </div>
+    </div>
+    <div class="content" data-aos="fade-left" data-aos-delay="600">
+        <span>why choose us?</span>
+        <h3>Homestay's Majesty Awaits You</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde fugit repellat error deserunt nam aperiam odit libero quos provident. Nostrum?</p>
+        <a href="#" class="btn">read more</a>
+    </div>
+</section>
 <div class="container-fluid mx-auto">
     <div class="row justify-content-between py-1">
         <div class="col-4">
@@ -30,7 +46,7 @@
             </button>
         </div>
     </div>
-    <table id="myTable2" class="table table-striped table-bordered table-dark table-hover" style="width: 100%">
+    <table id="myTable2" class="table table-striped table-bordered table-dark table-hover" style="width: 100%;padding: 5px 0 5px 0 !important">
         <thead class="thead-dark">
         <tr>
             <th scope="col">#</th>
@@ -84,7 +100,6 @@
         </c:forEach>
         </tbody>
     </table>
-
 </div>
 <c:import url="/components/footer.jsp"/>
 
