@@ -10,7 +10,10 @@ window.onscroll = () =>{
 
 document.querySelectorAll('.about .video-container .controls .control-btn').forEach(btn =>{
     btn.onclick = () =>{
+        alert("Đã Click");
         let src = btn.getAttribute('data-src');
         document.querySelector('.about .video-container .video').src = src;
+
     }
 })
+

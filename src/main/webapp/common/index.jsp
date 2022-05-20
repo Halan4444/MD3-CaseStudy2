@@ -13,9 +13,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <!-- custom js file link  -->
-    <script src="js/script.js" defer></script>
+
     <link rel="stylesheet" href="/css/style.scss">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
 
@@ -25,6 +24,7 @@
         });
 
     </script>
+
 
 </head>
 <body>
@@ -36,9 +36,8 @@
         <h3 data-aos="fade-up" data-aos-delay="300">follow our CodeGym</h3>
         <p data-aos="fade-up" data-aos-delay="450">Welcome to the cross-Vietnam - global tour, provided by CodeGym travel agency.
             Let's explore this magical world with us</p>
-        <a data-aos="fade-up" data-aos-delay="600" class="btn" href="/view/contract"> Book Now</a>
+        <a data-aos="fade-up" data-aos-delay="600" class="btn" href="/view/contract/list.jsp"> Book Now</a>
     </div>
-
 </section>
 
 <!-- home section ends -->
@@ -68,15 +67,14 @@
 <!-- booking form section ends -->
 
 <!-- about section starts  -->
-
 <section class="about" id="about">
-
     <div class="video-container" data-aos="fade-right" data-aos-delay="300">
         <video src="/images/about-vid-1.mp4" muted autoplay loop class="video"></video>
         <div class="controls">
             <span class="control-btn" data-src="/images/about-vid-1.mp4"></span>
-            <span class="control-btn" data-src="/images/about-vid-2.mp4"></span>
-            <span class="control-btn" data-src="/images/about-vid-3.mp4"></span>
+
+            <span class="control-btn"   data-src="/images/about-vid-2.mp4"></span>
+            <span class="control-btn"  data-src="/images/about-vid-3.mp4"></span>
         </div>
     </div>
     <div class="content" data-aos="fade-left" data-aos-delay="600">
@@ -112,7 +110,10 @@
         <%--        <input type="file" name="file" />--%>
         <%--        <input type="submit" value="Upload" />--%>
         <%--    </form>--%>
-        <form class="box" data-aos="fade-up" data-aos-delay="150" method="post" action="/fileuploadservlet" enctype="multipart/form-data" style="background-color: #29d9d5">
+
+        <form class="box" data-aos="fade-up" data-aos-delay="150" method="post" action="/fileuploadservlet"
+              enctype="multipart/form-data" style="background-color: #29d9d5">
+
             <input type="file" name="file" />
             <input type="submit" value="Upload" />
         </form>
@@ -132,6 +133,7 @@
 
 <c:import url="/components/footer.jsp"/>
 </body>
+<script src="/js/script.js" defer></script>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
