@@ -13,16 +13,15 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <!-- custom js file link  -->
-
     <link rel="stylesheet" href="/css/style.scss">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="common/script.js" defer></script>
+    <script src="js/script.js" defer></script>
     <script>
-
         AOS.init({
             duration: 800,
             offset:150,
         });
-
     </script>
 
 
@@ -98,18 +97,7 @@
     </div>
 
     <div class="box-container">
-        <%--        <c:forEach  items='${products}' var="product">--%>
-        <%--        <td><a href="/ProductServlet?action=view&id=${product.getId()}">${product.getProductName()}</a></td>--%>
-        <%--        <td>${product.getPrice()}</td>--%>
-        <%--        <td>${product.getDescription()}</td>--%>
-        <%--        <td><a href="/ProductServlet?action=edit&id=${product.getId()}">edit</a></td>--%>
-        <%--        <td><a href="/ProductServlet?action=delete&id=${product.getId()}">delete</a></td>--%>
-        <%--        </c:forEach>--%>
 
-        <%--    <form method="post" action="fileuploadservlet" enctype="multipart/form-data">--%>
-        <%--        <input type="file" name="file" />--%>
-        <%--        <input type="submit" value="Upload" />--%>
-        <%--    </form>--%>
 
         <form class="box" data-aos="fade-up" data-aos-delay="150" method="post" action="/fileuploadservlet"
               enctype="multipart/form-data" style="background-color: #29d9d5">
@@ -133,7 +121,6 @@
 
 <c:import url="/components/footer.jsp"/>
 </body>
-<script src="/js/script.js" defer></script>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

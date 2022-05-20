@@ -20,17 +20,23 @@ public class FilterController implements Filter {
         HttpServletResponse response = (HttpServletResponse) res;
         HttpSession session = request.getSession(false);
 
+        String signupURI = request.getContextPath() + "/signup"; // http://localhost:8080/login
         String loginURI = request.getContextPath() + "/login"; // http://localhost:8080/login
         String employeeURI = request.getContextPath() + "/employees";
 
         boolean loggedIn = session != null && session.getAttribute("usernameSession") != null;
         boolean loginRequest = request.getRequestURI().equals(loginURI);
+        boolean signupRequest = request.getRequestURI().equals(signupURI);
 
         boolean employeeRequest = request.getRequestURI().equals(employeeURI);
         boolean havePermission = session != null &&
                 ("admin".equals(session.getAttribute("roleSession"))
                         || "manager".equals(session.getAttribute("roleSession")));
 
+        if (signupRequest){
+            chain.doFilter(request, response);
+            return;
+        }
         if (loggedIn || loginRequest) {
             if (employeeRequest) {
                 if (havePermission) {
@@ -41,7 +47,8 @@ public class FilterController implements Filter {
             } else {
                 chain.doFilter(request, response);
             }
-        } else {
+        }
+        else {
             response.sendRedirect(loginURI);
         }
     }
